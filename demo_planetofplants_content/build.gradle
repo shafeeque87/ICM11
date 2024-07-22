@@ -1,0 +1,10 @@
+plugins {
+    id("com.intershop.icm.cartridge.product")
+    id("com.intershop.gradle.cartridge-resourcelist")
+}
+dependencies 
+{
+	cartridge(project(":demo_planetofplants"))
+	cartridge("com.intershop.platform:core")
+	cartridge("com.intershop.business:sld_enterprise_app")	
+}

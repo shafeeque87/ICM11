@@ -1,0 +1,36 @@
+plugins {
+	id("com.intershop.icm.cartridge.product")
+ 	id("com.intershop.gradle.isml")
+	id("com.intershop.gradle.cartridge-resourcelist")
+}
+
+tasks.test.configure {
+    dependsOn(tasks.isml)
+}
+
+dependencies 
+{
+
+	cartridge(project(":bc_warehouse"))
+	cartridge(project(":bc_warehouse_orm"))
+	cartridge("com.intershop.platform:core")
+	cartridge("com.intershop.platform:orm")
+	cartridge("com.intershop.platform:servletengine")
+	cartridge("com.intershop.platform:isml")
+	cartridge("com.intershop.platform:bc_application")
+	cartridge("com.intershop.platform:bc_foundation")
+	cartridge("com.intershop.business:xcs")
+	cartridge("com.intershop.business:sld_ch_consumer_plugin")
+	cartridge("com.intershop.business:sld_enterprise_app")
+	cartridge("com.intershop.platform:bc_repository")
+	cartridge("com.intershop.platform:businessobject")
+	cartridge("com.intershop.business:bc_image")
+	cartridge("com.intershop.business:bc_product")
+	cartridge("com.intershop.business:bc_dashboard")
+	cartridge("com.intershop.platform:cache")
+	cartridge("com.intershop.platform:app")
+	cartridge("com.intershop.platform:pf_property")
+	cartridge("com.intershop.business:bc_mvc")
+	cartridge("com.intershop.platform:pf_extension")
+
+}

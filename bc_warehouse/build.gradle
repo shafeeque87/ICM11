@@ -1,0 +1,20 @@
+plugins {
+	id("java")
+	id("com.intershop.icm.cartridge.product")
+ 	id("com.intershop.gradle.isml")
+	id("com.intershop.gradle.cartridge-resourcelist")
+}
+
+dependencies 
+{
+	cartridge("com.intershop.platform:core")
+	cartridge("com.intershop.platform:orm")
+	cartridge("com.intershop.platform:bc_application")
+	cartridge("com.intershop.platform:bc_repository")
+	cartridge("com.intershop.platform:businessobject")
+	cartridge("com.intershop.platform:pf_property")
+	cartridge("com.intershop.business:xcs")
+	cartridge("com.intershop.business:bc_product")
+	cartridge("com.intershop.business:bc_image")
+	cartridge("com.intershop.platform:bc_application")
+}

@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enfinity xsi:schemaLocation="http://www.intershop.com/xml/ns/enfinity/7.1/xcs/impex catalog.xsd http://www.intershop.com/xml/ns/enfinity/6.5/core/impex-dt dt.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.intershop.com/xml/ns/enfinity/7.1/xcs/impex" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:dt="http://www.intershop.com/xml/ns/enfinity/6.5/core/impex-dt" major="6" minor="1" family="enfinity" branch="enterprise" build="7.5.0.0.20140904113818">
+<product sku="WateringPot1Students">
+<sku>WateringPot1Students</sku>
+<name xml:lang="en-US">Watering Pot (1l) *ONLY FOR STUDENTS*</name>
+<category-links>
+<category-link name="StudentsSpecial" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="Student_1_liter.png" />
+<image-ref image-view="front" image-type="M" image-base-name="Student_1_liter.png" />
+<image-ref image-view="front" image-type="S" image-base-name="Student_1_liter.png" />
+<image-ref image-view="side" image-type="L" image-base-name="Student_1_liter.png" />
+<image-ref image-view="side" image-type="M" image-base-name="Student_1_liter.png" />
+<image-ref image-view="side" image-type="S" image-base-name="Student_1_liter.png" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">4</product-list-price>
+</product-list-prices>
+<product-cost-prices>
+<product-cost-price currency="USD" net-price="1">3</product-cost-price>
+</product-cost-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">WateringPot1Students</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T15:01:31+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="GiftCertficate10">
+<sku>GiftCertficate10</sku>
+<long-description xml:lang="en-US">A digital gift certificate with an amount of 10 $ as give away for your friends. They can redeem this gift certificate at their next online shopping trip.
+No shipping is needed. You will receive the code as email.</long-description>
+<name xml:lang="en-US">ZGift Certificate 10 $</name>
+<short-description xml:lang="en-US">A physical gift certificate for 10 $</short-description>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="gce_10.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="gce_10.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="gce_10.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="gce_10.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="gce_10.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="gce_10.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">10</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>0</online>
+<available>0</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="FreightClassID" dt:dt="string">DIGITALDELIVERY</custom-attribute>
+<custom-attribute name="GC_ORDER_REQUIRED_GiftCardService" dt:dt="string">Standard Gift Certificate</custom-attribute>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">GiftCertficate10</custom-attribute>
+<custom-attribute name="ReadyForShipmentMax" dt:dt="int">1</custom-attribute>
+<custom-attribute name="ReadyForShipmentMin" dt:dt="int">0</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="GiftCertificate" dt:dt="string" xml:lang="en-US">10 $</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FicusBenjamini">
+<sku>FicusBenjamini</sku>
+<long-description xml:lang="en-US">point of origin: India ||
+size: 150 - 200 cm ||
+Easy-Care: no ||
+sensitive to cold: yes</long-description>
+<name xml:lang="en-US">Ficus Benjamini</name>
+<short-description xml:lang="en-US">point of origin: India ||
+size: 150 - 200 cm ||
+Easy-Care: no ||
+sensitive to cold: yes</short-description>
+<category-links>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0">
+<position>5.5</position>
+</category-link>
+<category-link name="PottedPlants" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Ficus_Benjamini.jpg" />
+<image-ref image-view="front" image-type="L" image-base-name="Ficus_Benjamini.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Ficus_Benjamini.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Ficus_Benjamini.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Ficus_Benjamini.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Ficus_Benjamini.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">16.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku>FlowerPower</manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-OurCatalog-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FicusBenjamini</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-08-13T10:48:00+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FicusBenjaminiStudents">
+<sku>FicusBenjaminiStudents</sku>
+<long-description xml:lang="en-US">point of origin: India ||
+size: 150 - 200 cm ||
+Easy-Care: no ||
+sensitive to cold: yes</long-description>
+<name xml:lang="en-US">Ficus Benjamini *ONLY FOR STUDENTS*</name>
+<short-description xml:lang="en-US">point of origin: India ||
+size: 150 - 200 cm ||
+Easy-Care: no ||
+sensitive to cold: yes</short-description>
+<category-links>
+<category-link name="StudentsSpecial" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Student_Benjamini.png" />
+<image-ref image-view="front" image-type="S" image-base-name="Student_Benjamini.png" />
+<image-ref image-view="front" image-type="L" image-base-name="Student_Benjamini.png" />
+<image-ref image-view="side" image-type="M" image-base-name="Student_Benjamini.png" />
+<image-ref image-view="side" image-type="S" image-base-name="Student_Benjamini.png" />
+<image-ref image-view="side" image-type="L" image-base-name="Student_Benjamini.png" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">10</product-list-price>
+</product-list-prices>
+<product-cost-prices>
+<product-cost-price currency="USD" net-price="1">8</product-cost-price>
+</product-cost-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FicusBenjaminiStudents</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T15:01:31+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FicusBonsai">
+<sku>FicusBonsai</sku>
+<long-description xml:lang="en-US">point of origin: Asia ||
+size: 25 - 40 cm ||
+Easy-Care: no ||
+sensitive to cold: yes</long-description>
+<name xml:lang="en-US">Ficus Bonsai</name>
+<short-description xml:lang="en-US">point of origin: Asia ||
+size: 25 - 40 cm ||
+Easy-Care: no ||
+sensitive to cold: yes</short-description>
+<category-links>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0">
+<position>2.0</position>
+</category-link>
+<category-link name="PottedPlants" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Ficus_Bonsai.jpg" />
+<image-ref image-view="front" image-type="L" image-base-name="Ficus_Bonsai.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Ficus_Bonsai.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Ficus_Bonsai.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Ficus_Bonsai.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Ficus_Bonsai.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">11.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku>FlowerPower</manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-OurCatalog-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FicusBonsai</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FicusRetusaBonsai">
+<sku>FicusRetusaBonsai</sku>
+<name xml:lang="en-US">Ficus Retusa Bonsai</name>
+<category-links>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0">
+<position>0.0</position>
+</category-link>
+<category-link name="PottedPlants" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Ficus_Cordanaasdas.jpg" />
+<image-ref image-view="front" image-type="L" image-base-name="Ficus_Cordanaasdas.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Ficus_Cordanaasdas.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Ficus_Cordanaasdas.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Ficus_Cordanaasdas.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Ficus_Cordanaasdas.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">12.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FicusRetusaBonsai</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FicusRetusaBonsaiStudents">
+<sku>FicusRetusaBonsaiStudents</sku>
+<name xml:lang="en-US">Ficus Retusa Bonsai *ONLY FOR STUDENTS*</name>
+<category-links>
+<category-link name="StudentsSpecial" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Student_Recusa_Bonsai.png" />
+<image-ref image-view="front" image-type="L" image-base-name="Student_Recusa_Bonsai.png" />
+<image-ref image-view="front" image-type="S" image-base-name="Student_Recusa_Bonsai.png" />
+<image-ref image-view="side" image-type="M" image-base-name="Student_Recusa_Bonsai.png" />
+<image-ref image-view="side" image-type="L" image-base-name="Student_Recusa_Bonsai.png" />
+<image-ref image-view="side" image-type="S" image-base-name="Student_Recusa_Bonsai.png" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">8</product-list-price>
+</product-list-prices>
+<product-cost-prices>
+<product-cost-price currency="USD" net-price="1">8</product-cost-price>
+</product-cost-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-OurCatalog-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FicusRetusaBonsaiStudents</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T15:01:31+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FlowerPotGreen">
+<sku>FlowerPotGreen</sku>
+<name xml:lang="en-US">Flower Pot Green</name>
+<category-links>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0">
+<position>1.0</position>
+</category-link>
+<category-link name="FlowerPotsGreen" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="pot_2.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="pot_2.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="pot_2.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="pot_2.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="pot_2.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="pot_2.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">4.49</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FlowerPotGreen</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FlowerPotGreenStudents">
+<sku>FlowerPotGreenStudents</sku>
+<name xml:lang="en-US">Flower Pot Green *ONLY FOR STUDENTS*</name>
+<category-links>
+<category-link name="StudentsSpecial" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Student_gree_pot.png" />
+<image-ref image-view="front" image-type="S" image-base-name="Student_gree_pot.png" />
+<image-ref image-view="front" image-type="L" image-base-name="Student_gree_pot.png" />
+<image-ref image-view="side" image-type="M" image-base-name="Student_gree_pot.png" />
+<image-ref image-view="side" image-type="S" image-base-name="Student_gree_pot.png" />
+<image-ref image-view="side" image-type="L" image-base-name="Student_gree_pot.png" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">2</product-list-price>
+</product-list-prices>
+<product-cost-prices>
+<product-cost-price currency="USD" net-price="1">1</product-cost-price>
+</product-cost-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FlowerPotGreenStudents</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T15:01:31+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FlowerPotOrange">
+<sku>FlowerPotOrange</sku>
+<name xml:lang="en-US">Flower Pot Orange</name>
+<category-links>
+<category-link name="FlowerPotsOrange" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0"/>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0">
+<position>5.0</position>
+</category-link>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="pot_5.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="pot_5.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="pot_5.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="pot_5.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="pot_5.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="pot_5.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">4.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FlowerPotOrange</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="FlowerPotOrangeStudents">
+<sku>FlowerPotOrangeStudents</sku>
+<name xml:lang="en-US">Flower Pot Orange *ONLY FOR STUDENTS*</name>
+<category-links>
+<category-link name="StudentsSpecial" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Student_orange_pot.png" />
+<image-ref image-view="front" image-type="S" image-base-name="Student_orange_pot.png" />
+<image-ref image-view="front" image-type="L" image-base-name="Student_orange_pot.png" />
+<image-ref image-view="side" image-type="M" image-base-name="Student_orange_pot.png" />
+<image-ref image-view="side" image-type="S" image-base-name="Student_orange_pot.png" />
+<image-ref image-view="side" image-type="L" image-base-name="Student_orange_pot.png" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">2</product-list-price>
+</product-list-prices>
+<product-cost-prices>
+<product-cost-price currency="USD" net-price="1">1.2</product-cost-price>
+</product-cost-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">FlowerPotOrangeStudents</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T15:01:31+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="Orchid">
+<sku>Orchid</sku>
+<name xml:lang="en-US">Orchid</name>
+<category-links>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0">
+<position>7.875</position>
+</category-link>
+<category-link name="PottedPlants" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Orchinee.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Orchinee.jpg" />
+<image-ref image-view="front" image-type="L" image-base-name="Orchinee.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Orchinee.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Orchinee.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Orchinee.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">15.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">Orchid</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="PonytailPalm">
+<sku>PonytailPalm</sku>
+<name xml:lang="en-US">Ponytail Palm</name>
+<category-links>
+<category-link name="PottedPlants" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="Elefantenfuss.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Elefantenfuss.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="Elefantenfuss.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Elefantenfuss.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Elefantenfuss.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Elefantenfuss.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">10.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PonytailPalm</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="SunflowerSeed">
+<sku>SunflowerSeed</sku>
+<name xml:lang="en-US">Sunflower Seed</name>
+<category-links>
+<category-link name="FlowerSeeds" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0"/>
+<category-link name="Seeds" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="M" image-base-name="Sunflower_seeds.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Sunflower_seeds.jpg" />
+<image-ref image-view="front" image-type="L" image-base-name="Sunflower_seeds.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Sunflower_seeds.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Sunflower_seeds.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Sunflower_seeds.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">3.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">SunflowerSeed</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T14:08:25+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="TomatoSeed">
+<sku>TomatoSeed</sku>
+<name xml:lang="en-US">Tomato Seed</name>
+<category-links>
+<category-link name="VegetableSeeds" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0"/>
+<category-link name="FruitSeeds" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0"/>
+<category-link name="Seeds" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="Tomato_Seeds.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="Tomato_Seeds.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="Tomato_Seeds.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="Tomato_Seeds.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="Tomato_Seeds.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="Tomato_Seeds.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">1.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">TomatoSeed</custom-attribute>
+<custom-attribute name="PublishedDate" dt:dt="date">2013-09-18T14:08:28+02:00</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="WateringPot10">
+<sku>WateringPot10</sku>
+<name xml:lang="en-US">Watering Pot (10l)</name>
+<category-links>
+<category-link name="WateringPots6-10liter" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="L" image-base-name="watering_pot_2.jpg" />
+<image-ref image-view="front" image-type="S" image-base-name="watering_pot_2.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="watering_pot_2.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="watering_pot_2.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="watering_pot_2.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="watering_pot_2.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">10.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-OurCatalog-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">WateringPot10</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+<product sku="WateringPot1">
+<sku>WateringPot1</sku>
+<name xml:lang="en-US">Watering Pot (1l)</name>
+<category-links>
+<category-link name="Favorite" domain="PlanetOfPlants-OurCatalog" default = "0" hotdeal = "0">
+<position>12.0</position>
+</category-link>
+<category-link name="WateringPots1-5liter" domain="PlanetOfPlants-OurCatalog" default = "1" hotdeal = "0"/>
+</category-links>
+<images>
+<image-ref image-view="front" image-type="S" image-base-name="watering_pot.jpg" />
+<image-ref image-view="front" image-type="M" image-base-name="watering_pot.jpg" />
+<image-ref image-view="front" image-type="L" image-base-name="watering_pot.jpg" />
+<image-ref image-view="side" image-type="S" image-base-name="watering_pot.jpg" />
+<image-ref image-view="side" image-type="M" image-base-name="watering_pot.jpg" />
+<image-ref image-view="side" image-type="L" image-base-name="watering_pot.jpg" />
+</images>
+<product-list-prices>
+<product-list-price currency="USD" net-price="1">6.99</product-list-price>
+</product-list-prices>
+<tax-class id = "FullTax"/>
+<product-type name = "Basic" domain = "system"/>
+<online>1</online>
+<available>1</available>
+<availability-status>0</availability-status>
+<manufacturer>
+<manufacturer-name></manufacturer-name>
+<manufacturer-sku></manufacturer-sku>
+</manufacturer>
+<custom-attributes>
+<custom-attribute name="GiftWrappable" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="PID_OWNER_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">PlanetOfPlants</custom-attribute>
+<custom-attribute name="PID_VALUE_SellerID@PlanetOfPlants-MasterRepository" dt:dt="string">WateringPot1</custom-attribute>
+<custom-attribute name="WarrantyEligible" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</product>
+</enfinity>

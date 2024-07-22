@@ -1,0 +1,118 @@
+<!-- TEMPLATENAME: product/ProductInventoryUpdate_52.isml -->
+<iscontent type="text/html" charset="UTF-8">
+<!-- Working Area -->
+<isinclude template="inc/Modules">
+<!-- Main Content -->
+
+<!-- Page Navigator -->
+<isBreadcrumbTrail link="#URL(Action('ViewProductInventory_52-Update'), Parameter('ChannelID', ChannelID), Parameter('ProductID', Product:UUID))#" text="#localizeText('stock.update')#" id="ProductInventory">
+<!-- EO Page Navigator -->
+
+<div><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></div>
+<!-- end error handling -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<isform name="formMask" action="#URL(Action('ViewProductInventory_52-Dispatch'))#" method="post">	
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="aldi">
+				<tr>
+					<td class="table_title s"><isprint value="#Product:Name#"></td>
+				</tr>
+				<!-- simple delete confirmation-->
+				<isif condition="#isDefined(confirmDeleteUpdate)#">
+					<ISMessageBox subject="inventory" type="sdc" okbtnname="deleteUpdate" cancelbtnname="cancelDeleteUpdate" parametername1="ProductID" parametervalue1="#Product:UUID#" parametername2="KeyPrefix" parametervalue2="#KeyPrefix#">
+				</isif>
+				
+				<!-- start error handling -->
+				<isif condition="#hasElements(StockForm:InvalidParameters)#">
+				    <h2 class="error top"><istext key="error.stock"></h2>
+				    <ul>
+				        <isloop iterator="StockForm:InvalidParameters" alias="param">
+				           	<li class="error top"><istext key="#param:Message#"/></li>          
+				        </isloop>
+				    </ul>
+				</isif>
+				<!-- end error handling -->
+				
+				<!-- product locking information -->
+				<isinclude template="inc/ProductLockInformation_52">
+				<!-- end product locking information -->
+				<tr>
+					<td class="table_title_description s" nowrap="nowrap"><istext key="stock.mandatory1"/><span class="star">*</span><istext key="stock.mandatory2"/><br/>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellspacing="0" cellpadding="0" width="25%">
+							<tr>
+								<td colspan="2"><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+							</tr>
+							<tr>
+								<td class="fielditem2" nowrap="nowrap"><istext key="stock.warehouse.label"/></td>
+								<td class="fielditem2">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>				
+											<td><input type="text" name="#StockForm:WarehouseID:QualifiedName#" maxlength="20" size="30" value="<isprint value="#StockBO:WarehouseName#">" class="inputfield_en" disabled="disabled"/>
+											    <input type="hidden" name="#StockForm:WarehouseID:QualifiedName#" value="<isprint value="#StockBO:WarehouseName#">"/>
+											</td>											
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+							<isif condition="#StockForm:Count:isError("error.stock.count") OR StockForm:Count:isMissing#">
+								<td class="fielditem2_error" nowrap="nowrap"><istext key="stock.count.label"/><span class="star">*</span></td>
+							<iselse>
+								<td class="fielditem2" nowrap="nowrap"><istext key="stock.count.label"/><span class="star">*</span></td>
+							</isif>
+								<td class="fielditem2">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><input type="text" name="#StockForm:Count:QualifiedName#" maxlength="20" size="10" value="<isprint value="#StockBO:Count#">" class="inputfield_en"/></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap"><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="w e s">
+			<table border="0" cellspacing="4" cellpadding="0">
+				<tr>
+					<td class="button">
+						<isif condition="#isDefined(ProductLockedForMe)#">
+							<input type="hidden" name="ChannelID" value="<isprint value="#ChannelID#">"/>
+							<input type="hidden" name="ProductID" value="<ISPRINT value="#Product:UUID#">"/>
+							<input type="hidden" name="WarehouseID" value="<ISPRINT value="#WarehouseID#">"/>
+							<input type="hidden" name="webform-id" value="StockForm"/>
+							<input type="hidden" name="ProcessType" value="Update"/>
+							<input type="submit" name="update" value="Apply" class="button"/>
+						<iselse>
+							<input type="submit" name="update" value="Apply" class="button" disabled="disabled"/>
+						</isif>
+					</td>
+					<td class="button"><input type="reset" name="cancelDeleteUpdate" value="Reset" class="button"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="backbar_left">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="button"><input type="hidden" name="ProductID" value="<ISPRINT value="#Product:UUID#">"/><input type="submit" name="back" value="&lt;&lt; Back to List" class="button"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</isform>
+</table>
+<!-- EO Main Content -->
+<!-- EO Working Area -->

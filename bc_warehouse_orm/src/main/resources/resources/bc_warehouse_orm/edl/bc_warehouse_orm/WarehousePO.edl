@@ -1,0 +1,18 @@
+import "enfinity:/bc_warehouse_orm/src/main/resources/resources/bc_warehouse_orm/edl/bc_warehouse_orm/StockPO.edl";
+import "enfinity:/core/edl/com/intershop/beehive/core/capi/domain/ExtensibleObjectPO.edl";
+import "enfinity:/core/edl/com/intershop/beehive/core/types.edl";
+
+namespace bc_warehouse_orm
+{
+	orm class WarehousePO extends ExtensibleObjectPO cached soft{
+		attribute name : string<256> required;
+		attribute location : string<256>;
+		attribute capacity : int;
+		attribute description: string localized;
+		
+		alternate key (name, domainID);
+		
+		relation stockItemPOs : StockPO[0..n] inverse warehousePO;
+		
+	}
+}

@@ -1,0 +1,110 @@
+<iscontent type="text/html" charset="UTF-8">
+<!-- TEMPLATENAME: product/NewProductInventory_52.isml -->
+<!-- Working Area -->
+<!-- Main Content -->
+
+<!-- Page Navigator -->
+<isBreadcrumbTrail link="#URL(Action('ViewProductInventory_52-New'), Parameter('ChannelID', ChannelID), Parameter('ProductID', Product:UUID))#" text="#localizeText('stock.new')#" id="ProductInventory">
+<!-- EO Page Navigator -->
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td width="100%" class="table_title n w e s"><istext key="stock.new"/> </td>
+	</tr>
+	
+	<!-- start error handling -->
+	<isif condition="#hasElements(StockForm:InvalidParameters)#">
+	    <h2 class="error top"><istext key="error.stock"></h2>
+	    <ul>
+	        <isloop iterator="StockForm:InvalidParameters" alias="param">
+	           	<li class="error top"><istext key="#param:Message#"/></li>          
+	        </isloop>
+	    </ul>
+	</isif>
+	<!-- end error handling -->
+	
+	<tr>
+		<td class="table_title_description w e"><istext key="stock.mandatory1"/><span class="star">*</span><istext key="stock.mandatory2"/><br/>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<isform action="#URL(Action('ViewProductInventory_52-Dispatch'))#" method="post" name="formMask">
+	<tr>
+		<td><input type="hidden" name="ChannelID" value="<isprint value="#ChannelID#">"/><input type="hidden" name="ProductID" value="<ISPRINT value="#ProductID#">"/><input type="hidden" name="webform-id" value="StockForm"/>
+			<isif condition="#hasLoopElements(WarehouseBOs)#">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="w e s n">
+				<tr>
+					<td>
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tr>
+								<td colspan="2"><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+							</tr>
+							<tr>
+								<td class="fielditem2" nowrap="nowrap"><istext key="stock.warehouse.label"/><span class="star">*</span></td>
+								<td class="table_detail" width="100%">
+									<select name="#StockForm:WarehouseID:QualifiedName#" class="inputfield_en">
+										<isloop iterator="WarehouseBOs" alias="Warehouse">
+											<option value="#stringToHtml(Warehouse:ID)#" <isif condition="#StockForm:WarehouseID:Value eq Warehouse:ID#">selected="selected"</isif>><isprint value="#Warehouse:Name#"></option>
+										</isloop>
+									</select>
+								</td>
+							</tr>
+							<tr>
+							<isif condition="#StockForm:Count:isError("error.stock.count") OR StockForm:Count:isMissing#">
+								<td class="fielditem2_error" nowrap="nowrap"><istext key="stock.count.label"/><span class="star">*</span></td>
+							<iselse>
+								<td class="fielditem2" nowrap="nowrap"><istext key="stock.count.label"/><span class="star">*</span></td>
+							</isif>
+								<td class="fielditem2">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><input type="text" name="#StockForm:Count:QualifiedName#" maxlength="20" size="10" value="<isprint value="#StockForm:Count:Value#">" class="inputfield_en"/></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap"><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+				</tr>
+			</table>
+			<iselse/>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td class="table_title_description w e n s"><span class="star"><istext key="stock.warehouse.msg"/></span><br/>
+				</tr>
+			</table>
+			</isif>
+		</td>
+	</tr>	
+<!--- the functional buttons at the bottom --->
+	<isif condition="#hasLoopElements(WarehouseBOs)#">
+	<tr>		
+		<td class="w e s" align="right">
+			<table border="0" cellspacing="4" cellpadding="0">
+				<tr>
+					<td class="button"><input type="submit" name="create" value="Apply" class="button"/></td>
+					<td class="button"><input type="submit" name="back" value="Cancel" class="button"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</isif>
+	<tr>
+		<td class="backbar_left">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="button"><input type="submit" name="back" value="&lt;&lt; Back to List" class="button"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</isform>
+</table>
+
+<!-- EO Main Content -->
+<!-- EO Working Area -->
+

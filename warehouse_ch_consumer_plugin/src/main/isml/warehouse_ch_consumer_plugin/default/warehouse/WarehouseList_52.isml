@@ -1,0 +1,135 @@
+<iscontent type="text/html" charset="UTF-8" compact="true">
+<!-- TEMPLATENAME: warehouse/WarehouseList_52.isml -->
+
+<!-- Page Navigator -->
+<isBreadcrumbTrail link="#URL(Action('ViewWarehouseList_52-List'))#" text="#localizeText('warehouse.list')#" id="Warehouse">
+<!-- EO Page Navigator -->
+
+
+<isform action="#URL(Action('ViewWarehouseList_52-Dispatch'))#" method="post" name="WarehouseListForm">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td>							
+			<!-- Main Content -->
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td width="100%" class="table_title aldi"><istext key="warehouse.list"/></td>
+				</tr>
+				<!--- Confirmation and Error Messages --->
+				<isif condition="#isDefined(confirmDelete)#">
+					<isif condition="#hasElements(SelectedWarehouseIDs)#">
+						<ISMessageBox subject="warehouse" type="mdc" okbtnname="delete" cancelbtnname="cancelDelete" colspan="1">
+					<iselse>
+						<ISMessageBox subject="warehouse" type="mde" colspan="1">
+					</isif>
+				</isif>
+				<tr>
+					<td class="table_title_description w e s"><istext key="warehouse.text1"/></td>
+				</tr>	
+			</table>					
+					
+			<isif condition="#hasElements(WarehouseBOs)#">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="table_header aldi center" nowrap="nowrap" width="70">
+							<div id="A">
+								<table border="0" cellspacing="0" cellpadding="0" class="table_header center" width="75">
+									<tr>
+										<td nowrap="nowrap">
+											<a href="javascript:selectAll('WarehouseListForm','SelectedWarehouseID','A','B');" class="tableheader">Select All</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div id="B" style="display:none">
+								<table border="0" cellspacing="0" cellpadding="0" class="table_header center" width="75">
+									<tr>
+										<td nowrap="nowrap">
+										<a href="javascript:selectAll('WarehouseListForm','SelectedWarehouseID','A','B');" class="tableheader">Clear All</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="table_header e s"><istext key="warehouse.label.name"/></td>
+						<td class="table_header e s" nowrap="nowrap"><istext key="warehouse.label.location"/></td>
+						<td class="table_header e s" nowrap="nowrap"><istext key="warehouse.label.description"/></td>
+						<td class="table_header e s" nowrap="nowrap"><istext key="warehouse.label.capacity"/></td>
+					</tr>
+					
+					<iscomment> *** Start of loop *** </iscomment>
+					<isloop iterator="WarehouseBOs" alias="Warehouse">
+						<tr>
+							<td class="w e s center">
+								<isif condition="#isDefined(SelectedWarehouseIDs)#">
+									<input type="checkbox" name="SelectedWarehouseID" value="#stringToHtml(Warehouse:ID)#"								 
+									 	<isloop iterator="SelectedWarehouseIDs" alias="SWU">
+									 	  <isif condition="#SWU EQ Warehouse:ID#">
+									 	  	checked="checked"<isbreak>
+									 	  </isif>
+									 	</isloop>								 																
+									/>
+								<iselse/>
+									<input type="checkbox" name="SelectedWarehouseID" value="#stringToHtml(Warehouse:ID)#"/>
+								</isif>
+							</td>
+							<td class="table_detail e s">&nbsp;
+								<a href="#url(action('ViewWarehouse_52-Show'), 
+									Parameter('WarehouseID', Warehouse:ID))#"
+									class="table_detail_link">
+									<isprint value="#Warehouse:Name#"/>
+								</a>
+							</td>
+							<td class="table_detail e s">
+								<isprint value="#Warehouse:Location#"/>
+							</td>
+							<td class="table_detail e s">
+								<isprint value="#Warehouse:Description#"/>
+							</td>		
+						
+								<td class="table_detail e s">
+									<isprint value="#Warehouse:Capacity#"/>
+								</td>					
+						</tr>
+					</isloop>										
+					<iscomment> *** End of loop *** </iscomment>
+				</table>
+				
+			<iselse>	
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="table_detail w e s"><istext key="warehouse.missing.text1"/><br/><istext key="warehouse.missing.text2"/></td>
+					</tr>
+				</table>
+			</isif>
+
+			<table class="w e s" width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="right">
+						<table border="0" cellspacing="4" cellpadding="0">
+							<tr>
+								<td class="button"><input type="submit" name="new" value="<istext key="warehouse.button.new"/>" class="button"/></td>
+								<td class="button"><input type="submit" name="confirmDelete" value="<istext key="warehouse.button.delete"/>" class="button"/></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<isif condition="#isDefined(WarehouseBOs:ElementCount)#">
+				<ISPagingBar pageable="WarehouseBOs">
+			</isif>
+		</td>
+	</tr>
+	
+	<tr>
+			<td><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+	</tr>
+</table> 
+</isform>	
+
+

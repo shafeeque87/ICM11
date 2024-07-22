@@ -1,0 +1,17 @@
+plugins {
+    id("com.intershop.icm.cartridge.product")
+    id("com.intershop.gradle.cartridge-resourcelist")
+}
+
+dependencies 
+{
+	cartridge("com.intershop.b2b:ac_order_approval")
+	cartridge("com.intershop.business:as_backoffice")
+	cartridge("com.intershop.platform:bc_foundation")
+	cartridge("com.intershop.business:bc_orderprocess")
+	cartridge("com.intershop.business:bc_product_rating_orm")
+	cartridge("com.intershop.platform:bc_service")
+	cartridge("com.intershop.business:btc")
+	cartridge("com.intershop.business:bts")
+	cartridge("com.intershop.platform:core")
+}

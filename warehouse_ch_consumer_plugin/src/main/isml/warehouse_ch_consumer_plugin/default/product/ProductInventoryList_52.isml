@@ -1,0 +1,117 @@
+<iscontent type="text/html" charset="UTF-8">
+<isinclude template="inc/ConfirmationScript">
+<!-- Working Area -->
+<isinclude template="inc/Modules">
+<!-- Main Content -->
+<isBreadcrumbTrail listview="true" link="#URL(Action('ViewProductInventory_52-List'), Parameter('ChannelID', ChannelID), Parameter('ProductID', Product:UUID))#" id="#Product:UUID#" text="#Product:Name#" text1="#localizeText('stock.list')#" id="ProductInventory">
+
+<!-- Start Tabs-->
+<isset scope="request" name="SelectedTab" value="Inventory">
+<isinclude template="inc/ProductTabs_52">
+<!-- EO Page Navigator -->
+
+<isform action="#URL(Action('ViewProductInventory_52-Dispatch'))#" method="post" name="formMask">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td width="100%" class="w e s table_title"><isprint value="#Product:Name#"></td>
+				</tr>
+				<isif condition="#isDefined(confirmDelete)#">
+					<isif condition="#hasElements(SelectedWarehouseIDs)#">
+						<ISMessageBox subject="warehouse" type="mdc" okbtnname="delete" cancelbtnname="cancelDelete" colspan="1">
+					<iselse>
+						<ISMessageBox subject="warehouse" type="mde" colspan="1">
+					</isif>
+				</isif>
+
+				<tr>
+					<td>
+					<!-- product locking information -->
+					<isinclude template="inc/ProductLockInformation_52">
+					<!-- end product locking information -->
+					</td>
+				</tr>
+				<!-- product sharing information -->
+				<isinclude template="inc/ProductSharingInformation">
+				<!-- end product sharing information -->				
+				<!-- end product locking information -->
+				<tr>
+					<td class="table_title_description w e"><istext key="stock.tab.description1"/><br><istext key="stock.tab.description2"/></td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<isif condition="#hasElements(Inventories)#">
+				<tr>
+					<td class="table_header aldi center" nowrap="nowrap" width="70">
+					<div id="A">
+						<table border="0" cellspacing="0" cellpadding="0" class="table_header center" width="75">
+							<tr>
+							<td nowrap="nowrap" width="70">
+									<a href="javascript:selectAll('formMask','WarehouseID','A','B');" class="tableheader">Select&nbsp;All</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="B" style="display:none">
+						<table border="0" cellspacing="0" cellpadding="0" class="table_header center" width="75">
+							<tr>
+								<td nowrap="nowrap" width="70">
+									<a href="javascript:selectAll('formMask','WarehouseID','A','B');" class="tableheader">Clear&nbsp;All</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</td>
+					<td class="table_header n e s" nowrap="nowrap">Warehouse</td>
+					<td class="table_header n e s" nowrap="nowrap">Stock count</td>
+				</tr>
+					<isloop iterator="Inventories" alias="Stock">
+						<tr>
+							<td class="table_detail w e s center"><input type="hidden" name="WarehouseID" value="#stringToHtml(Stock:WarehouseID)#"/><input type="checkbox" name="SelectedWarehouseID" value="#stringToHtml(Stock:WarehouseID)#" <isif condition="#isdefined(SelectedWarehouseIDs)#"><isloop iterator ="SelectedWarehouseIDs" alias="SWU"><isif condition="#SWU EQ Stock:WarehouseID#">checked="checked"<isbreak></isif></isloop></isif>/></td>
+							<td class="table_detail e s" width="100%"><a href="#URL(Action('ViewProductInventory_52-Show'), Parameter('ChannelID', ChannelID), Parameter('WarehouseID', Stock:WarehouseID), Parameter('ProductID', Product:UUID))#" class="table_detail_link"><isprint value="#Stock:WarehouseName#"></a>&nbsp;</td>
+							<td class="table_detail e s" nowrap="nowrap"><isprint value="#Stock:Count#">&nbsp;</td>
+						</tr>
+					</isloop>					
+				<iselse>
+					<tr>
+						<td colspan="5" class="table_detail aldi"><istext key="stock.noitem.text1"/><br/><istext key="stock.noitem.text2"/></td>
+					</tr>
+				</isif>
+					<tr>
+						<td align="right" colspan="5" class="w e s">
+							<table border="0" cellspacing="4" cellpadding="0">
+								<tr>
+									<td class="button">
+										<isif condition="#isDefined(ProductLockedForMe)#">
+											<input type="hidden" name="ChannelID" value="<isprint value="#ChannelID#">"/>
+											<input type="hidden" name="ProductID" value="<isprint value="#Product:UUID#">"/>
+											<input type="hidden" name="ProcessType" value="New"/>
+											<input type="submit" name="new" value="New" class="button"/>
+										<iselse>
+											<input type="submit" name="new" value="New" class="button" disabled/>
+										</isif>
+									</td>
+									<isif condition="#hasElements(Inventories)#">
+										<td class="button">
+											<isif condition="#isDefined(ProductLockedForMe)#">
+												<input type="hidden" name="ProductID" value="<isprint value="#Product:UUID#">"/>
+												<input type="submit" name="confirmDelete" value="Delete" class="button"/>
+											<iselse>
+												<input type="submit" name="confirmDelete" value="Delete" class="button" disabled/>
+											</isif>
+										</td>
+									</isif>
+								</tr>
+							</table>
+						</td>
+					</tr>
+			</table>
+		</td>
+	</tr>
+  </table>
+</isform>
+<ISObjectDetailsPagingBar pagelocatorname="ProductList" currentobject="#Product#" nameforobjectuuid="ProductID" pipeline="ViewProductInventory_52-List" pagenumber="#DetailsPageNumber#" parametername1="ChannelID"  parametervalue1="#ChannelID#">
+<!-- EO Main Content -->
+<!-- EO Working Area -->

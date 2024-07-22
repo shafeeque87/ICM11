@@ -1,0 +1,21 @@
+import "enfinity:/bc_warehouse_orm/src/main/resources/resources/bc_warehouse_orm/edl/bc_warehouse_orm/WarehousePO.edl";
+import "enfinity:/core/edl/com/intershop/beehive/core/types.edl";
+
+namespace bc_warehouse_orm
+{
+	oca orm class StockPO cached soft{
+		attribute count : int;
+		attribute productID : uuid required readonly;
+		attribute domainID : uuid required readonly;
+		attribute warehouseID : uuid required readonly;
+		
+		primary key (productID, domainID, warehouseID);
+		index(productID, domainID);
+		index(warehouseID);
+		
+		relation warehousePO: WarehousePO[1..1] inverse stockItemPOs
+		{
+		foreign key (warehouseID) -> (UUID);
+		}
+	}
+}

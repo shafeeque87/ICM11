@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<components xmlns="http://www.intershop.de/component/2010"
+	scope="global">
+	<implementation
+		name="b2c.ApplicationBOWarehouseExtensionFactory"
+		class="com.intershop.component.warehouse.internal.ApplicationBOWarehouseExtensionFactory"
+		/>
+		
+		<implementation name="ApplicationBOWarehouseExtensionFactory"
+                    class="com.intershop.component.warehouse.internal.ORMWarehouseBORepositoryImplFactory">
+    </implementation>
+		
+</components>

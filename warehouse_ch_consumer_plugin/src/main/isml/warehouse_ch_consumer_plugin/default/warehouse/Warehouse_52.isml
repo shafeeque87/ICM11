@@ -1,0 +1,128 @@
+<iscontent type="text/html" charset="UTF-8" compact="true">
+
+<isBreadcrumbTrail link="#URL(Action('ViewWarehouse_52-Show'), Parameter('WarehouseID', WarehouseBO:ID))#" text="#WarehouseBO:Name#">
+
+<!-- Tabs -->
+<table border="0" cellspacing="0" cellpadding="0">
+<isform name="formMask" action="#URL(Action('ViewWarehouse_52-Dispatch'))#" method="post">
+
+</table>
+<!-- EO Tabs -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td width="100%" class="table_title"><isprint value="#WarehouseBO:Name#"></td>
+	</tr>
+	<!-- start error handling -->
+	<isif condition="#isDefined(confirmDelete)#">
+		<ISMessageBox subject="warehouse" type="sdc" okbtnname="delete" cancelbtnname="cancel">					
+	</isif>		
+	<isif condition="#hasElements(WarehouseForm:InvalidParameters)#">
+	    <h2 class="error top"><istext key="warehouse.text.invalid"/></h2>
+	    <ul>
+	        <isloop iterator="WarehouseForm:InvalidParameters" alias="param">
+	           	<li class="error top"><istext key="#param:Message#"/></li>          
+	        </isloop>
+	    </ul>
+	</isif>
+	<isif condition="#isDefined(ErrorMsg) AND (ErrorMsg EQ 'DuplicateWarehouseName')#">
+		<h2 class="error top"><istext key="warehouse.text.invalid"/></h2>
+		<ul>
+			<li class="error top"><istext key="error.warehouse.duplicatename" parameter0="#WarehouseForm:Name:Value#"/></li>
+		</ul> 
+	</isif>	
+
+	<tr>
+		<td class="table_title_description w e" nowrap="nowrap">
+			<istext key="warehouse.mandatory.text1"/><span class="star">*</span><istext key="warehouse.mandatory.text2"/><br/><br/>
+			<istext key="warehouse.message2"/>
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td>
+			<input name="WarehouseID" type="hidden" value="#stringToHtml(WarehouseBO:ID)#"/>
+			<input name="SelectedWarehouseID" type="hidden" value="#stringToHtml(WarehouseBO:ID)#"/>
+			<table cellspacing="0" cellpadding="0" border="0" width="50%" class="w e s">
+				<tr><td colspan="4"><img src="#WebRoot()#/images/space.gif" width="1" height="4" alt="" border="0"/></td></tr>
+				
+				<tr>
+					<isif condition="#WarehouseForm:Name:isError("error.required") OR WarehouseForm:Name:isError("error.regexp") OR (ErrorMsg EQ "DuplicateWarehouseName")#">
+						<td class="fielditem2_error" nowrap="nowrap"><istext key="warehouse.label.name"/><span class="star">*</span>&nbsp;</td>
+						<td class="table_detail"><input type="text" name="#WarehouseForm:Name:QualifiedName#" class="inputfield_en" maxlength=2048 size=70 value="<isprint value="#WarehouseForm:Name:Value#">"/></td>
+					<iselse>
+						<td class="fielditem2" nowrap="nowrap"><istext key="warehouse.label.name"/><span class="star">*</span>&nbsp;</td>
+						<td class="table_detail"><input type="text" name="#WarehouseForm:Name:QualifiedName#" class="inputfield_en" maxlength=2048 size=70 value="<isprint value="#WarehouseBO:Name#">"/></td>
+					</isif>					
+				</tr>
+				
+				<tr>
+					<isif condition="#WarehouseForm:Location:isError("error.required")#">
+						<td class="fielditem2_error"><istext key="warehouse.label.location"/><span class="star">*</span>&nbsp;</td>
+						<td class="table_detail"><input type="text" name="#WarehouseForm:Location:QualifiedName#" class="inputfield_en" maxlength=2048 size=70 value="<isprint value="#WarehouseForm:Location:Value#">"/></td>
+					<iselse>
+						<td class="fielditem2"><istext key="warehouse.label.location"/><span class="star">*</span>&nbsp;</td>
+						<td class="table_detail"><input type="text" name="#WarehouseForm:Location:QualifiedName#" class="inputfield_en" maxlength=2048 size=70 value="<isprint value="#WarehouseBO:Location#">"/></td>
+					</isif>						
+				</tr>
+				
+				<!--- optional parameter description --->
+				<tr>										
+					<td class="fielditem2"><istext key="warehouse.label.description"/>&nbsp;</td>						
+					<td class="table_detail"><input type="text" name="#WarehouseForm:Description:QualifiedName#" class="inputfield_en" maxlength=2048 size=70 value="<isprint value="#WarehouseBO:Description#">"/></td>
+				</tr>
+						
+				
+				<!--- optional parameter capacity --->
+				<tr>										
+					<td class="fielditem2"><istext key="warehouse.label.capacity"/>&nbsp;</td>						
+					<td class="table_detail"><input type="text" name="#WarehouseForm:Capacity:QualifiedName#" class="inputfield_en" maxlength=2048 size=70 value="<isprint value="#WarehouseBO:Capacity#">"/></td>
+				</tr>
+				
+				
+				<!--- optional address --->
+				<isif condition="#(WarehouseBO:Extension("Address"):City NE "")#">
+				<tr>
+					<td class="fielditem2"><istext key="warehouse.label.address"/>&nbsp;</td>
+					<td class="table_detail">
+						
+						<isprint value="#WarehouseBO:Extension("Address"):City#"/>&nbsp;
+						
+					</td>
+				</tr>	
+				</isif>
+						
+				<tr><td colspan="4"><img src="#WebRoot()#/images/space.gif" width="1" height="6" alt="" border="0"/></td></tr>
+			</table>
+			<table class="w e s" width="100%" border="0" cellspacing="0" cellpadding="0">						
+				<tr>
+					<td align="right">						
+						<table border="0" cellspacing="4" cellpadding="0">
+							<tr>
+									<td class="button"><input class="button" type="submit" name="update" value="<istext key="warehouse.button.apply"/>"/></td>
+									<td class="button"><input class="button" type="submit" name="confirmDelete" value="<istext key="warehouse.button.delete"/>"/></td>
+							</tr>
+						</table>						
+					</td>							
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td width="100%" class="backbar_left">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="button"><input class="button" type="submit" name="back" value="&lt;&lt; Back to List"/></td>
+				</tr>
+			</table>					
+		</td>
+	</tr>
+</table>
+</td></tr>
+</isform>
+</table>
+<!-- EO Working Area -->

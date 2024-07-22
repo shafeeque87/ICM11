@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--@Group Warehouse-->
+
+<pipeline:Pipeline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pipeline="http://www.intershop.de/pipeline/2010"
+    name="ViewWarehouseList_52" overrideMode="Inherit" type="view">
+<!--@Location 3,1-->
+  <nodes xsi:type="pipeline:StartNode" nodeID="StartNode_DoZWsDduEe-H14uIryW_dw" name="Dispatch"
+      secure="true">
+    <nodeSuccessors name="next" next="DispatchFormAction_Doak0DduEe-H14uIryW_dw"/>
+  </nodes>
+<!--@Location 3,2-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="DispatchFormAction_Doak0DduEe-H14uIryW_dw">
+    <configurationValues name="OutValue_0" value="ViewWarehouse_52-New"/>
+    <configurationValues name="OutValue_1" value="ViewWarehouseList_52-ListAllKeepSelection"/>
+    <configurationValues name="OutValue_2" value="ViewWarehouseList_52-Remove"/>
+    <configurationValues name="OutValue_3" value="ViewWarehouseList_52-List"/>
+    <pipelet href="enfinity:/bc_foundation/pipelets/DispatchFormAction.xml"/>
+    <nodeSuccessors name="next" next="JumpNode_DocaADduEe-H14uIryW_dw"/>
+    <nodeSuccessors name="pipelet_error" next="JumpNode_DodBEDduEe-H14uIryW_dw"/>
+    <parameterBindings name="Key_0" objectPath="new"/>
+    <parameterBindings name="Key_1" objectPath="confirmDelete"/>
+    <parameterBindings name="Key_2" objectPath="delete"/>
+    <parameterBindings name="Key_3" objectPath="cancelDelete"/>
+    <returnValueBindings name="SelectionKey" objectPath="JumpTarget"/>
+  </nodes>
+<!--@Location 3,3-->
+  <nodes xsi:type="pipeline:JumpNode" nodeID="JumpNode_DocaADduEe-H14uIryW_dw">
+    <startNode referencedName="SecureJump-Start"/>
+  </nodes>
+<!--@Location 4,2-->
+  <nodes xsi:type="pipeline:JumpNode" nodeID="JumpNode_DodBEDduEe-H14uIryW_dw">
+    <startNode referencedName="ViewWarehouseList_52-List"/>
+  </nodes>
+<!--@Location 1,0-->
+  <nodes xsi:type="pipeline:StartNode" nodeID="StartNode_DodBETduEe-H14uIryW_dw" name="List">
+    <nodeSuccessors name="next" next="JoinNode_DodoIDduEe-H14uIryW_dw"/>
+  </nodes>
+<!--@Location 1,1-->
+  <nodes xsi:type="pipeline:JoinNode" nodeID="JoinNode_DodoIDduEe-H14uIryW_dw">
+    <nodeSuccessors name="next" next="GetWarehouseBOs_DoePMDduEe-H14uIryW_dw"/>
+  </nodes>
+<!--@Location 1,2-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="GetWarehouseBOs_DoePMDduEe-H14uIryW_dw">
+    <pipelet href="enfinity:/bc_warehouse/pipelets/GetWarehouseBOs.xml"/>
+    <nodeSuccessors name="next" next="PrepareApplicationView_Doh5kDduEe-H14uIryW_dw"/>
+    <parameterBindings name="WarehouseBORepository" objectPath="ApplicationBO:Repository(&quot;WarehouseBORepository&quot;)"/>
+  </nodes>
+<!--@Location 1,3-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="PrepareApplicationView_Doh5kDduEe-H14uIryW_dw">
+    <configurationValues name="SelectedMenuItem" value="channel\catalog"/>
+    <configurationValues name="WorkingTemplate" value="warehouse/WarehouseList_52"/>
+    <pipelet href="enfinity:/core/pipelets/PrepareApplicationView.xml"/>
+    <nodeSuccessors name="next" next="InteractionNode_DoigoDduEe-H14uIryW_dw"/>
+  </nodes>
+<!--@Location 1,4-->
+  <nodes xsi:type="pipeline:InteractionNode" nodeID="InteractionNode_DoigoDduEe-H14uIryW_dw">
+    <template referencedName="application/ApplicationFrame"/>
+  </nodes>
+<!--@Location 2,0-->
+  <nodes xsi:type="pipeline:StartNode" nodeID="StartNode_DojHsDduEe-H14uIryW_dw" name="ListAllKeepSelection"
+      secure="true">
+    <nodeSuccessors name="next" next="GetFormSelection_DojuwDduEe-H14uIryW_dw"/>
+  </nodes>
+<!--@Location 2,1-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="GetFormSelection_DojuwDduEe-H14uIryW_dw">
+    <configurationValues name="DefaultParameterName" value="SelectedWarehouseID"/>
+    <pipelet href="enfinity:/bc_foundation/pipelets/GetFormSelection.xml"/>
+    <nodeSuccessors name="next" next="JoinNode_DodoIDduEe-H14uIryW_dw"/>
+    <returnValueBindings name="Selection" objectPath="SelectedWarehouseIDs"/>
+  </nodes>
+<!--@Location 5,0-->
+  <nodes xsi:type="pipeline:StartNode" nodeID="StartNode_DokV0DduEe-H14uIryW_dw" name="Remove"
+      secure="true">
+    <nodeSuccessors name="next" next="GetFormSelection_Dok84DduEe-H14uIryW_dw"/>
+  </nodes>
+<!--@Location 5,1-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="GetFormSelection_Dok84DduEe-H14uIryW_dw">
+    <configurationValues name="DefaultParameterName" value="SelectedWarehouseID"/>
+    <pipelet href="enfinity:/bc_foundation/pipelets/GetFormSelection.xml"/>
+    <nodeSuccessors name="next" next="LoopNode_Dolj8DduEe-H14uIryW_dw"/>
+    <returnValueBindings name="Selection" objectPath="SelectedWarehouseIDs"/>
+  </nodes>
+<!--@Location 5,2-->
+  <nodes xsi:type="pipeline:LoopNode" nodeID="LoopNode_Dolj8DduEe-H14uIryW_dw" loop="SelectedWarehouseIDs">
+    <nodeSuccessors name="next" next="JumpNode_Dos4sDduEe-H14uIryW_dw"/>
+    <entry key="WarehouseID">
+      <nodeSuccessors name="loop_entry_next" next="GetWarehouseBOByID_DomLADduEe-H14uIryW_dw"/>
+    </entry>
+  </nodes>
+<!--@Location 5,3-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="GetWarehouseBOByID_DomLADduEe-H14uIryW_dw">
+    <pipelet href="enfinity:/bc_warehouse/pipelets/GetWarehouseBOByID.xml"/>
+    <nodeSuccessors name="next" next="RemoveWarehouseBO_DopOUDduEe-H14uIryW_dw"/>
+    <nodeSuccessors name="pipelet_error" next="JoinNode_DosRoDduEe-H14uIryW_dw"/>
+    <parameterBindings name="WarehouseBORepository" objectPath="ApplicationBO:Repository(&quot;WarehouseBORepository&quot;)"/>
+  </nodes>
+<!--@Location 5,4-->
+  <nodes xsi:type="pipeline:PipeletNode" nodeID="RemoveWarehouseBO_DopOUDduEe-H14uIryW_dw">
+    <pipelet href="enfinity:/bc_warehouse/pipelets/RemoveWarehouseBO.xml"/>
+    <nodeSuccessors name="next" next="JoinNode_DosRoDduEe-H14uIryW_dw"/>
+    <parameterBindings name="WarehouseBORepository" objectPath="ApplicationBO:Repository(&quot;WarehouseBORepository&quot;)"/>
+  </nodes>
+<!--@Location 6,3-->
+  <nodes xsi:type="pipeline:JoinNode" nodeID="JoinNode_DosRoDduEe-H14uIryW_dw">
+    <nodeSuccessors name="next" next="LoopNode_Dolj8DduEe-H14uIryW_dw_Entry"/>
+  </nodes>
+<!--@Location 6,2-->
+  <nodes xsi:type="pipeline:JumpNode" nodeID="JumpNode_Dos4sDduEe-H14uIryW_dw">
+    <startNode referencedName="ViewWarehouseList_52-List"/>
+  </nodes>
+</pipeline:Pipeline>

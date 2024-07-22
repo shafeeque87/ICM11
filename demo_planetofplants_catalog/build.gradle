@@ -1,0 +1,9 @@
+plugins {
+    id("com.intershop.icm.cartridge.product")
+    id("com.intershop.gradle.cartridge-resourcelist")
+}
+dependencies 
+{
+	cartridge("com.intershop.platform:core")
+	cartridgeRuntime project(":demo_planetofplants")
+}
