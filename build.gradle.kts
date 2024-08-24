@@ -38,7 +38,7 @@ gitflowVersion {
     defaultVersion = "1.0.0"
 }
 
-description = "devtraining customization for ICM"
+description = "devtraining customization for ICM11"
 group = "com.devtraining"
 version = gitflowVersion.versionWithID
 
@@ -85,7 +85,7 @@ intershop {
         productName.set("devtraining ICM customization")
         copyrightOwner.set("Intershop Communications")
         copyrightFrom.set("2024")
-        organization.set("dvtrn")
+        organization.set("ish-devtraining")
     }
 
     projectConfig {

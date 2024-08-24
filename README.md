@@ -36,7 +36,7 @@ How to Work with an ICM AppServer Customer Project
   * Azure DevOps project (https://dev.azure.com/ish-devtraining/devtraining)
   * Azure Artifacts Maven project repositories (https://dev.azure.com/ish-devtraining/devtraining/_artifacts/feed/icm-maven-artifacts)
   - Docker registry with the ICM base containers (https://docker.tools.intershop.com)
-  - Docker registry with project containers (ishdvtrnacr.azurecr.io)
+  - Docker registry with project containers (EMPTY)
 
 - Basic Docker Configuration:
   - 8 GB RAM are recommended (settings: *Resources* | *Advanced*)
@@ -62,7 +62,7 @@ docker login docker.tools.intershop.com -u <XXX@user-intershop.de> -p <SuperStro
 **Login for Docker project registry**:
 ```
 az login
-az acr login --name ishdvtrnacr.azurecr.io
+az acr login --name EMPTY
 ```
 For more details, see [Authenticate with an Azure container registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli) in the Microsoft Azure Documentation.
 

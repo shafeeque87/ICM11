@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<components xmlns="http://www.intershop.de/component/2010" scope="global">
-    <fulfill requirement="extensionFactory" of="com.intershop.beehive.core.capi.businessobject.BusinessObjectExtensionFactories">
-        <instance with="b2c.ApplicationBOWarehouseExtensionFactory"/>
-        <instance with="ApplicationBOWarehouseExtensionFactory" />
-    </fulfill>
-</components>

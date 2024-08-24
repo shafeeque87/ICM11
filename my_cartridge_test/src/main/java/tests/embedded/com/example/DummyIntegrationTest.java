@@ -1,6 +1,4 @@
-package tests.embedded.com.example;
-
-
+package tests.embedded;
 
 import static org.junit.Assert.assertEquals;
 

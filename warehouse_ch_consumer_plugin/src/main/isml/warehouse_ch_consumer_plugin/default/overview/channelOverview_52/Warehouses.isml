@@ -1,5 +1,0 @@
-
-<iscontent type="text/html" charset="UTF-8" compact="true">
-<isNavigationOverviewItem apptext="true"
-		linkurl="#URL(Action('ViewWarehouseList_52-List'),Parameter('ChannelID', CurrentChannel:UUID))#"
-		displayname="warehouse.list" description="warehouse.text1">

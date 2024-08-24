@@ -7,34 +7,14 @@ description = 'Runnable Feature - all headless cartridges'
 
 dependencies {
 
-	cartridgeRuntime project(":demo_planetofplants")
-	cartridgeRuntime project(":demo_planetofplants_b2b")
-	cartridgeRuntime project(":demo_planetofplants_catalog")
-	cartridgeRuntime project(":demo_planetofplants_content")
-	cartridgeRuntime project(":demo_planetofplants_custom_fields")
-	cartridgeRuntime project(":demo_planetofplants_search")
-
-
     cartridgeRuntime "com.intershop.icm:ft_icm_as"
+
     cartridgeRuntime "com.intershop.solrcloud:ac_solr_cloud"
     cartridgeRuntime "com.intershop.solrcloud:ac_solr_cloud_bo"
-	
-	//Demo data inSPIRED
-	cartridgeRuntime "com.intershop.demodata:ft_demo"
-   
+
     // pwa
     cartridgeRuntime "com.intershop.headless:app_sf_pwa_cm"
-	
-	//Warehouse
-	cartridge project(":bc_warehouse")
-	cartridge project(":bc_warehouse_orm")
-	cartridge project(":warehouse_ch_consumer_plugin")
-	cartridge project(":app_sf_rest_stock")
-	
-	
-
-	//cartridge project(":app_sf_rest_product")
-	
-	cartridge project(":custom_product")
-	
+    
+    // add your production cartridge here
+    cartridgeRuntime project(":my_cartridge")
 }

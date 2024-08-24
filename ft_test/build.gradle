@@ -1,8 +1,6 @@
 plugins {
     id 'java'
-    id 'com.intershop.icm.cartridge.product'
-    id 'com.intershop.gradle.isml'
-    id 'com.intershop.gradle.cartridge-resourcelist'
+    id 'com.intershop.icm.cartridge.test'
 }
 
 description = 'Runnable Feature - all headless cartridges'

@@ -91,7 +91,7 @@ gradleEnterprise {
 }
 
 // define root project name
-rootProject.name = "devtraining-icm"
+rootProject.name = "devtraining-icm-11"
 
 val excludeList = listOf("gradle", ".gradle", "build", "bin", "reports", "buildSrc", "config", "sites", "docker")
 
