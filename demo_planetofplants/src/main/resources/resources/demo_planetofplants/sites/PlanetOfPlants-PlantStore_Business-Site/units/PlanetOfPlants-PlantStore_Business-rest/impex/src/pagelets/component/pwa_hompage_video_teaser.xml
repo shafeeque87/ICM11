@@ -20,7 +20,7 @@
 </configuration-parameter>
 <configuration-parameter name="Video">
 <definition-name>app_sf_base_cm:component.common.video.pagelet2-Component-Video</definition-name>
-<value name="Video" xml:lang="en-US">https://www.youtube.com/watch?v=ECibetK2EYI</value>
+<value name="Video" xml:lang="en-US">https://www.youtube.com/watch?v=KqiMOuPWSYs</value>
 </configuration-parameter>
 <configuration-parameter name="VideoSizePreset">
 <definition-name>app_sf_base_cm:component.common.video.pagelet2-Component-VideoSizePreset</definition-name>

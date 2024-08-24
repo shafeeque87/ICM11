@@ -23,7 +23,8 @@
 <value name="Products">
 <value>FicusBenjamini@PlanetOfPlants-PlantStore_Business</value>
 <value>FicusBonsai@PlanetOfPlants-PlantStore_Business</value>
-<value>Orchid@PlanetOfPlants-PlantStore_Business</value>u
+<value>Orchid@PlanetOfPlants-PlantStore_Business</value>
+<value>PonytailPalm@PlanetOfPlants-PlantStore_Business</value>
 </value>
 </configuration-parameter>
 <configuration-parameter name="Title">

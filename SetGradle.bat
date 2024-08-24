@@ -1,7 +1,16 @@
-SET GRADLE_USER_HOME=E:/ICM11/gradle
-SET CONFIGDIR=E:\ICM11\gradle\icm-default\conf
-echo off	
-doskey studio=E:\ICM11\Studio\IntershopStudio.exe 
-echo ----------------------------
-ECHO studio --- IntershopStudio.exe	
-echo ----------------------------
+@ECHO OFF
+doskey studio=E:\developer\ICM11\Studio\IntershopStudio.exe
+doskey 1 =  gradlew startsolr startwebserver startas --debug-icm=true
+doskey ! = gradlew stopas stopsolr stopwebserver
+ECHO GRADLE_USER_HOME	%GRADLE_USER_HOME%
+ECHO CONFIGDIR		%CONFIGDIR%
+ECHO ----------------------------
+ECHO studio
+ECHO gradlew startwebserver		
+ECHO gradlew startas
+ECHO gradlew startas --debug-icm=true
+ECHO gradlew startsolr
+ECHO gradlew stopas
+ECHO gradlew startsolr startwebserver startas --debug-icm=true
+ECHO gradlew stopas stopsolr stopwebserver  
+ECHO ----------------------------

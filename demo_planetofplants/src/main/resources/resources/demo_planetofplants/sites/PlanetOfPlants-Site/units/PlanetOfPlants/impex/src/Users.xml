@@ -7,51 +7,99 @@
 			<user-group id="SLD_AR_32_SHOP_MANAGER" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_SHOP_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_SHOP_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_SHOP_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_SHOP_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_SHOP_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_32_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
+			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
 			<user-group id="SLD_AR_20_CONTENT_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_32_CONTENT_MANAGER" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_ORDER_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_52_ORDER_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_ORDER_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_ORDER_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_ORDER_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_ORDER_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_52_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_52_CONSUMER_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_CONSUMER_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_CONSUMER_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_CONSUMER_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_CONSUMER_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_52_SHIPPING_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_SHIPPING_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_SHIPPING_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_SHIPPING_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_SHIPPING_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_32_PAYMENT_MANAGER" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_PAYMENT_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_PAYMENT_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_PAYMENT_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_PAYMENT_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_PAYMENT_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_ADMINISTRATOR" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_32_ADMINISTRATOR" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_ADMINISTRATOR" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_ADMINISTRATOR" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_ADMINISTRATOR" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_ADMINISTRATOR" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_ADMINISTRATOR" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_SYSTEM_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_32_SYSTEM_MANAGER" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_SYSTEM_PREFERENCE_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_52_SYSTEM_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_SYSTEM_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_SYSTEM_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_"/>
+			<user-group id="SLD_AR_52_SYSTEM_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_SYSTEM_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_32_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants-ResellerChannel"/>
 			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_CATALOG_AND_PRODUCT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_52_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_52_ORDER_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_ORDER_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_ORDER_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_ORDER_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
+			<user-group id="SLD_AR_52_ORDER_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
 			<user-group id="SLD_AR_52_MARKETING_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_MARKETING_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_MARKETING_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_MARKETING_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_MARKETING_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_20_LOCALIZATION_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_52_LOCALIZATION_MANAGER" domain="PlanetOfPlants-PlantStore"/>
 			<user-group id="SLD_AR_52_LOCALIZATION_MANAGER" domain="PlanetOfPlants-PlantStore_Business"/>
+			<user-group id="SLD_AR_52_LOCALIZATION_MANAGER" domain="PlanetOfPlants-PlantStore_Germany"/>
+			<user-group id="SLD_AR_52_LOCALIZATION_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands"/>
+			<user-group id="SLD_AR_52_LOCALIZATION_MANAGER" domain="PlanetOfPlants-PlantStore_France"/>
 			<user-group id="SLD_AR_53_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore-b2c-responsive"/>
 			<user-group id="SLD_AR_53_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore-b2c-responsive"/>
 			<user-group id="SLD_AR_53_AUDITOR" domain="PlanetOfPlants-PlantStore-b2c-responsive"/>
@@ -73,10 +121,25 @@
 			<user-group id="SLD_AR_53_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business-smb-responsive"/>
 			<user-group id="SLD_AR_53_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Business-smb-responsive"/>
 			<user-group id="SLD_AR_53_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_Business-rest"/>
+			<user-group id="SLD_AR_53_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_Germany-rest"/>
+			<user-group id="SLD_AR_53_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands-rest"/>
+			<user-group id="SLD_AR_53_CONTENT_MANAGER" domain="PlanetOfPlants-PlantStore_France-rest"/>
 			<user-group id="SLD_AR_53_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_Business-rest"/>
+			<user-group id="SLD_AR_53_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_Germany-rest"/>
+			<user-group id="SLD_AR_53_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands-rest"/>
+			<user-group id="SLD_AR_53_SYSTEM_MANAGER" domain="PlanetOfPlants-PlantStore_France-rest"/>
 			<user-group id="SLD_AR_53_AUDITOR" domain="PlanetOfPlants-PlantStore_Business-rest"/>
+			<user-group id="SLD_AR_53_AUDITOR" domain="PlanetOfPlants-PlantStore_Germany-rest"/>
+			<user-group id="SLD_AR_53_AUDITOR" domain="PlanetOfPlants-PlantStore_Netherlands-rest"/>
+			<user-group id="SLD_AR_53_AUDITOR" domain="PlanetOfPlants-PlantStore_France-rest"/>
 			<user-group id="SLD_AR_53_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Business-rest"/>
+			<user-group id="SLD_AR_53_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_France-rest"/>
+			<user-group id="SLD_AR_53_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands-rest"/>
+			<user-group id="SLD_AR_53_CONTENT_PREFERENCE_MANAGER" domain="PlanetOfPlants-PlantStore_Germany-rest"/>
 			<user-group id="SLD_AR_53_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Business-rest"/>
+			<user-group id="SLD_AR_53_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Germany-rest"/>
+			<user-group id="SLD_AR_53_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_Netherlands-rest"/>
+			<user-group id="SLD_AR_53_MARKETING_MANAGER" domain="PlanetOfPlants-PlantStore_France-rest"/>
 			<user-group id="SLD_AR_20_PROCESS_CHAIN_MANAGER" domain="PlanetOfPlants"/>
 			<user-group id="SLD_AR_20_PROCESS_CHAIN_VIEWER" domain="PlanetOfPlants"/>
 		</user-groups>

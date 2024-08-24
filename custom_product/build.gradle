@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'com.intershop.gradle.cartridge-resourcelist'
+    id 'com.intershop.icm.cartridge.product'
+}
+
+
+dependencies 
+{
+	cartridge("com.intershop.business:app_sf_rest_customer")
+	cartridge("com.intershop.business:sld_ch_b2c_base")
+
+	cartridge("com.intershop.business:bc_catalog")
+	cartridge("com.intershop.business:bc_product")
+	cartridge("com.intershop.business:bc_search")
+	cartridge("com.intershop.business:bc_customer")
+	cartridge("com.intershop.business:bc_customer_orm")
+	cartridge("com.intershop.platform:bc_address")
+   cartridge("com.intershop.business:bc_promotion")
+   cartridge("com.intershop.platform:core")
+   cartridge("com.intershop.platform:orm")
+   cartridge("com.intershop.platform:servletengine")
+   cartridge("com.intershop.platform:app")
+   cartridge("com.intershop.platform:component")
+   cartridge("com.intershop.platform:pf_objectgraph")
+   cartridge("com.intershop.platform:pf_cartridge")
+   cartridge("com.intershop.platform:rest")
+   cartridge("com.intershop.platform:bc_application")
+   cartridge("com.intershop.platform:bc_repository")
+   cartridge("com.intershop.platform:configuration")
+   cartridge("com.intershop.platform:businessobject")
+   cartridge("com.intershop.platform:pf_property")                                                 
+
+   cartridge("com.intershop.business:app_sf_rest")
+   cartridge("com.intershop.business:app_sf_rest_common")
+   
+   implementation("com.fasterxml.jackson.core:jackson-annotations")
+   implementation("com.google.inject:guice")
+   implementation("io.swagger.core.v3:swagger-annotations-jakarta")
+   implementation("jakarta.ws.rs:jakarta.ws.rs-api")   
+
+   testImplementation("org.junit.platform:junit-platform-runner")
+   testImplementation("com.fasterxml.jackson.core:jackson-core")
+   testImplementation("com.fasterxml.jackson.core:jackson-databind")
+   testImplementation("io.rest-assured:json-path")
+   testImplementation("org.hamcrest:hamcrest")
+   testImplementation("org.mockito:mockito-core")   
+   
+}

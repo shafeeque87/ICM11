@@ -19,7 +19,7 @@ dependencies {
     cartridgeRuntime "com.intershop.solrcloud:ac_solr_cloud"
     cartridgeRuntime "com.intershop.solrcloud:ac_solr_cloud_bo"
 	
-	//Demo data inspired
+	//Demo data inSPIRED
 	cartridgeRuntime "com.intershop.demodata:ft_demo"
    
     // pwa
@@ -30,4 +30,11 @@ dependencies {
 	cartridge project(":bc_warehouse_orm")
 	cartridge project(":warehouse_ch_consumer_plugin")
 	cartridge project(":app_sf_rest_stock")
+	
+	
+
+	//cartridge project(":app_sf_rest_product")
+	
+	cartridge project(":custom_product")
+	
 }
